@@ -1,0 +1,22 @@
+.alarm__table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.alarm__table th {
+  width: 350px;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  background: orange ;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.alarm__table td {
+  padding: 10px;
+  background: whitesmoke;
+  border-radius: 10px;
+}
