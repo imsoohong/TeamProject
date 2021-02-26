@@ -113,11 +113,11 @@ nav > a:hover {
 }
 
 .mybox{
+  display: flex;
   border: 2px solid black;
   font-size: 2em;
   width: 60%;
   height: 100%;
-  display: flex;
 }
 
 .mybox__img{ 
@@ -153,7 +153,7 @@ nav > a:hover {
   margin: 16px 0;
 }
 
-button {
+.box2-btn {
   display: block;
   width: 80%;
   padding: 10px;
@@ -174,7 +174,7 @@ button {
   color: black;
 }
 
-button:hover{
+.box2-btn:hover{
   background: orangered;
 }
 
