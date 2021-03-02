@@ -30,6 +30,10 @@ a {
   display: inline-block;
 }
 
+p{
+  font-size: 22px;
+}
+
 .header {
   display: grid;
   grid-template-columns: 0.4fr 1.4fr;
@@ -110,14 +114,16 @@ nav > a:hover {
   width: 100%;
   grid-area: main; 
   margin: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 .mybox{
   display: flex;
-  border: 2px solid black;
+  border: 1px solid #ccc;
   font-size: 2em;
-  width: 60%;
-  height: 100%;
+  width: 35%;
+  height: 80%;
 }
 
 .mybox__img{ 
@@ -139,7 +145,7 @@ nav > a:hover {
 }
 
 .mybox2{
-  border: 2px solid black;
+  border: 1px solid #ccc;
   font-size: 2em;
   margin-left: 100px;
   width: 30%;
@@ -156,7 +162,7 @@ nav > a:hover {
 .box2-btn {
   display: block;
   width: 80%;
-  padding: 10px;
+  padding: 5px;
   margin-top: 20px;
   margin-right: 10px;
   background: #00acee;
