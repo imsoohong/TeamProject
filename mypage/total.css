@@ -12,11 +12,12 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 0.3fr 1.8fr 0.3fr;
-  grid-template-rows: 0.1fr 1.9fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
   gap: 0px 0px;
   grid-template-areas:
     ". header ."
-    ". main .";
+    ". main ."
+    "footer footer footer";
 }
 
 * { 
@@ -121,7 +122,6 @@ a:hover {
 .mybox{
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   font-size: 2em;
   width: 20%;
   height: 100%;
@@ -142,3 +142,37 @@ a:hover {
 .small:focus, a:hover{
       color: red;
 }
+
+.footer {
+  border-top: 1px solid #ccc;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.column__title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+
+.footer__column ul {
+  text-align: center;
+  padding: 0px;
+}
+
+.footer__column li {
+  margin-bottom: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+
