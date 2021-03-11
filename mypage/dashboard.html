@@ -9,29 +9,29 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="dashboard.css">
   <link rel="stylesheet" href="total.css">
+  <link rel="stylesheet" href="final__total.css">
+  <link rel="stylesheet" href="mypage.css">
 </head>
 
-<div>
   <div class="grid-container">
     <div class="header">
-      <div class="logo"><a href="#"><img src="캡처.PNG"></a></div>
-      <div class="blank"></div>
-      <div class="top">
+      <div class="header__logo"><a href="#"><img src="캡처.PNG"></a></div>
+      <div class="header__top">
         <div class="input-group mb-3">
           <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2"
             id="search">
           <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
         </div>
-        <div class="right">
-          <a href="#">강의개설</a> |
+        <div class="header__right">
+          <a href="#">마이페이지</a> |
           <a href="#">로그아웃</a>
         </div>
       </div>
-      <div class="bottom">
+      <div class="header__bottom">
         <nav>
           <a href="#">온라인 강의</a>
           <a href="#">오프라인 강의</a>
-          <a href="#">게시판</a>
+          <a href="#">공지사항</a>
           <a href="#">강사 지원</a>
         </nav>
       </div>
@@ -42,7 +42,7 @@
           <p>강의내역</p>
           <p><a class="small" href="teacherpage.html">진행중인 강의</a></p>
           <p><a class="small" href="dashboard.html">대시보드</a></p>
-          <p><a class="small" href="alarm.html">알림</a></p>
+          <p><a class="small" href="notice.html">알림</a></p>
         </div>
         <div class="privacy">
           <p>회원정보</p>
@@ -66,29 +66,33 @@
       </div>
     </div>
     <div class="footer">
-      <div class="footer__column">
-        <span class="column__title">DOROOWA</span>
-        <ul>
-          <li>온라인 강의</li>
-          <li>오프라인 강의</li>
-          <li>공지사항</li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <span class="column__title">메뉴</span>
-        <ul>
-          <li>메뉴</li>
-          <li>메뉴</li>
-          <li>메뉴</li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <span class="column__title">메뉴</span>
-        <ul>
-          <li>메뉴</li>
-          <li>메뉴</li>
-          <li>메뉴</li>
-        </ul>
+      <div class="footer__wrapper">
+        <div class="footer__column">
+          <span class="column__title">메뉴</span>
+          <ul>
+            <li>홈</li>
+            <li>온라인</li>
+            <li>오프라인</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <span class="column__title">연락</span>
+          <ul>
+            <li>결제 / 환불 문의</li>
+            <li>주소</li>
+            <li>연락처</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <span class="column__title">공지사항</span>
+          <ul>
+            <li>공지사항</li>
+            <li>이용약관</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <span class="column__title">DOROOWA</span>
+        </div>
       </div>
     </div>
   </div>

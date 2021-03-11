@@ -1,0 +1,36 @@
+/*
+teahcer.html
+dashboard.html
+notice.html
+*/
+
+/* 마이페이지 메인 */
+.main{
+  display: flex;
+}
+
+/* 강사페이지 [메인 박스] */
+.mybox{
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  width: 20%;
+  height: 100%;
+}
+
+.page{
+  width: 80%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex; 
+  justify-content: space-around ;
+}
+
+/* 강사페이지 [강의내역, 회원정보] 폰트 */
+.small{
+  font-size: 0.6em;
+}
+
+.small:focus, a:hover{
+      color: red;
+}
