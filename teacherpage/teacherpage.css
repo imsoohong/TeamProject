@@ -3,6 +3,9 @@ teahcer.html
 dashboard.html
 notice.html
 */
+h3{
+  margin-bottom: 16px;
+}
 
 /* 마이페이지 메인 */
 .main{
@@ -40,8 +43,4 @@ notice.html
 .small:focus, a:hover{
   font-weight: bold;
   color: black;
-}
-
-h3{
-  margin-bottom: 16px;
 }
