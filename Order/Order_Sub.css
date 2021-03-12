@@ -4,11 +4,8 @@ h4 {
   font-weight: 700;
 }
 
-/* 메인 */
-.main {
-  grid-area: main; 
-  margin: 10px 0;
-  font-family: 'Open Sans', sans-serif;
+button:focus{ 
+  outline: none;
 }
 
 /* 결제 과정 */

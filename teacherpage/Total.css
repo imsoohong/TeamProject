@@ -1,3 +1,6 @@
+/* 온라인 오프라인 강의 결제페이지의 통합 CSS입니다.*/
+/* 후에 강사페이지(진행중인강의,대시보드,알림)과 통합 예정입니다 */
+
 /* 폰트 설정 */
 @font-face {
   font-family: 'NanumSquareRound';
@@ -14,6 +17,10 @@
 
 body {
   font-family: 'NanumSquareRound';
+}
+
+button:focus{ 
+  outline: none;
 }
 
 /* 태그 설정 */
@@ -56,16 +63,12 @@ a {
   justify-content: center; 
 }
 
+/* 검색창 */
 .header__top { 
   grid-area: top; 
   display: flex; 
   justify-content: space-between ; 
   margin-top: 16px;
-}
-
-.header__right { 
-  margin-top: 4px;
-  height: 60%;
 }
 
 /* 검색창 */
@@ -89,6 +92,13 @@ a {
   border-bottom:0px;
 }
 
+/* 헤더 메뉴 */
+.header__right { 
+  margin-top: 4px;
+  height: 60%;
+}
+
+/* 상단 메뉴 */
 .header__bottom { 
   grid-area: bottom; 
   display: flex; 
@@ -156,6 +166,7 @@ nav > a {
   font-size: 1.1em;
 }
 
+/* 컬럼 주요 메뉴 */
 .column__title {
   margin-top: 50px;
   margin-bottom: 50px;
