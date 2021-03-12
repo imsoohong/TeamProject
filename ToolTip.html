@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <title>Toggle practice</title>
   <style>
+    button {
+      outline: none;
+    }
+
     .btn-tgl {
       width: 200px;
       padding: 8px;
@@ -18,7 +24,7 @@
       border-radius: 8px;
     }
 
-    .btn-tgl2 {
+    .basket__move {
       height: 36px;
       margin-top: 10px;
       padding: 0 12px;
@@ -33,7 +39,7 @@
       cursor: pointer;
     }
 
-    .txt {
+    .basket {
       display: none;
       position: relative;
       width: 300px;
@@ -44,32 +50,37 @@
       box-shadow: 0 10px 21px -2px rgba(50, 51, 42, 0.2);
     }
 
-    .txt.show {
+    .basket.show {
       display: block;
+    }
+
+    .basket__delete {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      opacity: 0.3;
     }
   </style>
 </head>
 
 <body>
   <button type="button" class="btn-tgl">장바구니에 담기</button>
-  <p class="txt">
+
+  <p class="basket">
     장바구니에 담겼습니다.
-    <button type="button" class="btn-tgl2">장바구니로 이동</button>
+    <a class="basket__delete"><i class="fas fa-times"></i></a>
+    <button type="button" class="basket__move">장바구니로 이동</button>
   </p>
 </body>
 <script>
-  let toggleInit = (function () {
-    let status = true;
-    return function () {
-      if (status) {
-        document.querySelector('.txt').classList.add('show');
-      } else {
-        document.querySelector('.txt').classList.remove('show');
-      }
-      status = !status;
-    }
-  })();
-  document.querySelector('.btn-tgl').addEventListener('click', toggleInit);
+  document.querySelector('.btn-tgl').addEventListener('click', function () {
+    document.querySelector('.basket').classList.add('show');
+  });
+
+  document.querySelector('.basket__delete').addEventListener('click', function () {
+    document.querySelector('.basket').classList.remove('show');
+  });
 </script>
 
 </html>
