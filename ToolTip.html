@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toggle practice</title>
+  <style>
+    .btn-tgl {
+      width: 200px;
+      padding: 8px;
+      background: #00acee;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .btn-tgl2 {
+      height: 36px;
+      margin-top: 10px;
+      padding: 0 12px;
+      border-radius: 2px;
+      border: solid 1px #346aff;
+      background-color: #fff;
+      font-size: 14px;
+      line-height: 35px;
+      text-align: center;
+      color: #346aff;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .txt {
+      display: none;
+      position: relative;
+      width: 300px;
+      padding: 10px;
+      background: white;
+      text-align: center;
+      -webkit-box-shadow: 0 10px 21px -2px rgba(50, 51, 42, 0.2);
+      box-shadow: 0 10px 21px -2px rgba(50, 51, 42, 0.2);
+    }
+
+    .txt.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button" class="btn-tgl">장바구니에 담기</button>
+  <p class="txt">
+    장바구니에 담겼습니다.
+    <button type="button" class="btn-tgl2">장바구니로 이동</button>
+  </p>
+</body>
+<script>
+  let toggleInit = (function () {
+    let status = true;
+    return function () {
+      if (status) {
+        document.querySelector('.txt').classList.add('show');
+      } else {
+        document.querySelector('.txt').classList.remove('show');
+      }
+      status = !status;
+    }
+  })();
+  document.querySelector('.btn-tgl').addEventListener('click', toggleInit);
+</script>
+
+</html>
