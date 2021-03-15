@@ -1,0 +1,21 @@
+#container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.form-wrap .form-group {
+  margin: 50px auto;
+}
+
+.form-wrap button {
+  display: inline-block;
+  width: 40%;
+  height: 300px;
+  font-size: 40px;
+  border-radius: 50%;
+  float:none;
+}
+
+footer a {
+  font-size: 20px;
+}
