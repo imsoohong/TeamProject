@@ -1,3 +1,12 @@
+/* 폰트 설정*/
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 레이아웃 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,25 +16,20 @@
   outline: none;
 }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-weight: bold;
   background: #f5f6f7;
   line-height: 1.8;
 }
 
+/* 박스 전체 감싸는 컨테이너 */
 #container {
   margin: 30px auto;
   max-width: 600px;
   padding: 30px;
 }
 
+/* 본문 */
 .form-wrap {
   padding: 15px 25px;
   color: #333;
@@ -36,6 +40,7 @@ body {
   text-align: center;
 }
 
+/* 본문 텍스트 */
 .form-wrap .form-group {
   margin-top: 15px;
 }
@@ -52,6 +57,7 @@ body {
   border-radius: 15px;
 }
 
+/* 버튼 */
 .form-wrap button {
   display: block;
   padding: 10px;
@@ -61,7 +67,6 @@ body {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  float: left;
   border-radius: 15px;
 }
 

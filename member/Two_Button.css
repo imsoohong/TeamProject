@@ -1,5 +1,10 @@
+/* 두개 버튼 */
 .form-wrap button {
-  width: 47.9%;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 49%;
+}
+
+/* 버튼을 양 끝으로 찢어지게 하기 */
+.button-group { 
+  display: flex;
+  justify-content: space-between;
 }
