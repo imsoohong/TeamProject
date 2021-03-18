@@ -93,6 +93,11 @@
 	font-size: 1.1em;
 }
 
+.top__column ul{
+	display: flex;
+	flex-direction: column;
+}
+
 /* 컬럼 주요 메뉴 */
 .column__title {
 	margin : 25px 0;
