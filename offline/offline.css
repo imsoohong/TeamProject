@@ -1,0 +1,159 @@
+ section {
+  margin: 30px auto;
+  max-width: 1150px;
+  font-size: 16px;
+}
+
+.list {
+  padding: 16px 8px;
+  display: flex;
+  border-bottom: 0;
+  box-shadow: inset 0 -0.0625rem #d7e2eb;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 64%;
+  max-width: 64%; 
+}
+
+.content h4 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.tag-list {
+  margin: 0.75rem 0 0 -0.125rem;
+}
+
+.tag-list span {
+  font-size: 12px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  color: #263747;
+  background-color: #E9ECF3;
+}
+
+.img img{
+  width: 186.68px;
+  height: 120.91px;
+}
+
+.status {
+  margin: 6px 0 0;
+}
+
+.description,
+.status span {
+  color: #98A8B9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price {
+  padding: 24px 0 0 32px;
+  color: #0078FF;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* 푸터 */
+.footer {
+	border-top: 1px solid #ccc;
+	grid-area: footer;
+}
+
+.footer__wrapper {
+	max-width: 70vw;
+	margin: 0 auto;
+}
+
+/* 푸터 위쪽 */
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+
+.top__column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1.1em;
+}
+
+/* 컬럼 주요 메뉴 */
+.column__title {
+	margin : 25px 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.column__title img {
+	width: 150px;
+	height: 35px;
+	margin-bottom: 5px;
+}
+
+.top__column ul, .bottom__column ul {
+	text-align: center;
+	padding: 0px;
+}
+
+.top__column li {
+	margin-bottom: 15px;
+	list-style: none;
+	font-size: 16px;
+}
+
+/* 푸터 아래쪽 */
+.bottom__column {
+	display: flex;
+	align-items: center;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	font-size: 11px;
+}
+
+/* 푸터 아래쪽 왼쪽 */
+.left__title {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+}
+
+.left__title span {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+/* 푸터 아래쪽 오른쪽 */
+.right__title a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: #bdbdbd;
+	line-height: 50px;
+	font-size: 30px;
+	color: white;
+	margin-left: 10px;
+}
+
+.right__title a:hover {
+	color: #ccc;
+}

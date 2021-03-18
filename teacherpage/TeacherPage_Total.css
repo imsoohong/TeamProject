@@ -47,7 +47,7 @@ a {
   grid-template-rows: 90px 50px;
   gap: 0px 0px;
   grid-template-areas:
-    "logo top"
+    "helogo top"
     "bottom bottom";
   align-items: center;
 }
