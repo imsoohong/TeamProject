@@ -109,16 +109,12 @@
     display: block;
     top: 14px;
     right: 40px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .header__bottom,
   .header__right{
     display: none;
-  }
-
-  .center__menu{
-    display: none; 
   }
 
   .center__menu.open{
@@ -127,16 +123,17 @@
     background-color: #0C151C;
     width: 100vw;
   }
-
-  .center__menu li {
-    margin: 10px auto;
+  
+  .header__center { 
     display: none;
   }
 
-  .menu__li.open, 
-  .menu__li2.open,
-  .menu__li3.open,
-  .menu__li4.open {
+  .header__center.open{
     display: flex;
-  } 
+  }
+
+  .center__menu li {
+    margin: 10px auto;
+  }
+
 }
