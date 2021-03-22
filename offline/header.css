@@ -35,7 +35,6 @@ body {
 }
 
 .header li {
-	margin-right: 10px;
 	font-size: 19px;
 }
 
@@ -49,6 +48,7 @@ a {
 	color: black;
 }
 
+/* header__left와 right를 감싸는 wrapper */
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -59,36 +59,49 @@ a {
 	height: 51px;
 }
 
- .header__left img {
+/* 로고 이미지 줄이기 */
+.header__left img {
 	max-width: 182px;
 	max-height: 34px;
 } 
 
-/* .center__menu li{
-  margin: 30px;
-} */
+/* 센터 메뉴 간격 */
+.center__menu li{
+  margin: 0 30px;
+}
+
+/* 로그인 회원가입 박스 크기 줄이기 */
+.right__menu {
+	width: 175px;
+}
 
 .right__menu a {
 	color: #B2C0CC;
+}
+
+.right__menu li{
+	margin: 0 10px;
 }
 
 .right__menu a:hover {
 	color: white;
 }
 
+/* 하단 카테고리 */
 .bottom__menu {
 	background-color: white;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	border-bottom: 0;
 	box-shadow: inset 0 -0.0625rem #d7e2eb;
 	height: 38px;
 }
 
 .bottom__menu li {
-	margin-left: 3rem;
+	margin: 0 30px;
+	padding: 5px 0;
 	font-size: 18px;
-	padding: 8px 0;
 }
 
 .bottom__menu li:hover {
